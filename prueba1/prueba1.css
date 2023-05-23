@@ -67,6 +67,26 @@ li {
 }
   
 /* FORMULARIO */
+.grid_formulario{
+    display: grid;
+    min-height: 300px;
+    grid-template-columns: 60% 40%;
+    gap: 20px 10px;
+    align-content:space-between;
+    background-color: white;
+    
+}
 .formulario{
-    padding: 10px;
+    padding: 5px;
+    background-color: white;
+    margin: 3px;
+    border-radius: 5px;
+    border-style:ridge;
+      
+}
+
+.imagen_form{
+align-content: center;
+text-align: center;
+padding: 30px;
 }
