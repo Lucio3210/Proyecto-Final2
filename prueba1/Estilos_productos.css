@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+.grid-container {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px 300px;
+    gap: 20px 10px;
+    align-content: space-between;
+    font-family: 'Cantarell', sans-serif;
+    font-family: 'Sigmar', cursive;      
+}
+
+.item {
+    background: rgb(255, 255, 255);
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;    
+  
+}
+
+.articulo {
+    width: 90%;
+
+}
