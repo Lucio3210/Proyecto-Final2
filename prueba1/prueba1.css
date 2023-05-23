@@ -83,7 +83,7 @@ li {
 .item6 {grid-area: newsletter;}
 
 
-.grid-container {
+.grid-containerh {
     display: grid;
     grid-template-areas:
     'banner'
@@ -147,6 +147,7 @@ body {
     font-weight: lighter;
 }
 
+
 .imgn1 {
     width: 340px;
     height: 420px; 
@@ -159,7 +160,7 @@ body {
 
 .imgn3 {
     width: 340px;
-    height: 420px; 
+    height: 420px;
 }
 
 
