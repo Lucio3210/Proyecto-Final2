@@ -26,6 +26,11 @@
   
 }
 
+.item:hover{
+    transform: scale(1.1);
+    transition: transform .3s ;
+}
+
 .articulo {
     width: 90%;
 
