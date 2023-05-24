@@ -90,3 +90,16 @@ align-content: center;
 text-align: center;
 padding: 30px;
 }
+
+.ubicacion{
+    align-content: center;
+    text-align: center;
+    padding: 30px;
+       
+}
+
+.mapa{
+align-content: center;
+padding: 5px;
+margin: 15px;
+}
