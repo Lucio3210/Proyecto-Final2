@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,60 +9,75 @@
     <link rel="icon" href="Imagen-para-el-Logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital@0;1&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital@0;1&family=Vina+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../js/formulario.js"></script>
 
 </head>
+
 <body>
     <div class="header">
         <img class="header_img" src="../images/Imagen-para-el-Logo.png" alt="Imagen del logo">
-        <h1 class="header_h1">ELBOW to ELBOW <br>Store</h1>                       
+        <h1 class="header_h1">ELBOW to ELBOW <br>Store</h1>
     </div>
     <div class="navbar">
         <ul>
             <li class="active"><a href="../index.html">HOME</a></li>
             <li><a href="../pages/quienes_somos.html">¿QUIENES SOMOS?</a></li>
             <li><a href="../pages/productos.html">PRODUCTOS</a></li>
-            <li><a href="../pages/contacto.html">CONTACTO</a></li>                
+            <li><a href="../pages/contacto.html">CONTACTO</a></li>
         </ul>
     </div>
     <div></div>
     <div class="grid_formulario">
         <div>
-            <form class="formulario">
-                <h1>¿Queres ser parte del equipo Elbow to Elbow?</h1>
+            <form class="formulario" id="my-form" onsubmit="guardarPersona(event)">
+                <h1>¿Queres ser parte del equipo Elbow to Elbow?</h1><br>
                 <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Roman" required><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Roman"><br>
+
                 <label for="apellido">Apellido:</label><br>
-                <input type="text" id="apellido" name="apellido" placeholder="Riquelme" required><br>
+                <input type="text" id="apellido" name="apellido" placeholder="Riquelme"><br><br>
+
                 <p>Sexo:</p>
-                <input type="radio" id="masculino" name="sexo" value="MASCULINO" required>
+                <input type="radio" id="masculino" name="sexo" value="MASCULINO">
                 <label for="masculino">Masculino</label><br>
-                <input type="radio" id="femenino" name="sexo" value="FEMENINO" required>
+                <input type="radio" id="femenino" name="sexo" value="FEMENINO">
                 <label for="femenino">Femenino</label><br>
-                <input type="radio" id="nodefinido" name="sexo" value="NODEFINIDO" required>
-                <label for="nodefinido">No Definido</label><br>
+                <input type="radio" id="Nodefinido" name="Sexo" value="NODEFINIDO">
+                <label for="Nobinario">No Definido</label><br><br>
+
                 <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
+
                 <label for="tel">Telefono:</label><br>
-                <input type="tel" id="tel" name="tel" placeholder="0261-2606-011" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" required><br><br>
+                <input type="tel" id="tel" name="tel" placeholder="0261-2606-011" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}"
+                    required><br><br>
+
                 <p>Envíe su CV aquí:</p>
                 <label for="archivo">Seleccione su archivo:</label>
                 <input type="file" id="archivo" name="archivo"><br><br>
-                <input type="submit" value="ENVIAR">        
-              </form>
+                <!-- <input type="submit" value="ENVIAR">      -->
+                <button id="my-form-button">Enviar</button>
+                <p id="my-form-status"></p>
+            </form>
+
         </div>
         <div class="imagen_form">
-        <img src="../images/Imagen-para-el-Logo.png" alt="Imagen"></div>
-    </div> 
+            <img src="../images/Imagen-para-el-Logo.png" alt="Imagen">
+        </div>
+    </div>
     <div class="ubicacion">
         <p>DÓNDE ENCONTRARNOS</p>
         <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14312.999065016702!2d-53.645200613537604!3d-26.25355602817008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1684942810826!5m2!1ses-419!2sar" width="600" height="450" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14312.999065016702!2d-53.645200613537604!3d-26.25355602817008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1684942810826!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:1px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </div>   
+    </div>
 </body>
 <footer>
     <div class="footer">
@@ -81,6 +97,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
 </footer>
+
 </html>
