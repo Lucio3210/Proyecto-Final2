@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="prueba1.css">
     <link rel="stylesheet" href="estilos.css">
+    <script src="js/formulario.js"></script>
 </head>
 <body>
     <div class="header">
@@ -26,11 +27,14 @@
             <li><a href="contacto.html">CONTACTO</a></li>                
         </ul>
     </div> 
-    <form class="formulario">
+    <form class="formulario" id="my-form" onsubmit="guardarPersona(event)">
+
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" placeholder="Roman"><br>
+
         <label for="apellido">Apellido:</label><br>
         <input type="text" id="apellido" name="apellido" placeholder="Riquelme"><br><br>
+        
         <p>Sexo:</p>
         <input type="radio" id="masculino" name="sexo" value="MASCULINO">
         <label for="masculino">Masculino</label><br>
@@ -38,19 +42,20 @@
         <label for="femenino">Femenino</label><br>
         <input type="radio" id="Nodefinido" name="Sexo" value="NODEFINIDO">
         <label for="Nobinario">No Definido</label><br><br>
+
         <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" name="email" required><br>
+
         <label for="tel">Telefono:</label><br>
         <input type="tel" id="tel" name="tel" placeholder="0261-2606-011" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" required><br><br>
+        
         <p>Envíe su CV aquí:</p>
         <label for="archivo">Seleccione su archivo:</label>
         <input type="file" id="archivo" name="archivo"><br><br>
-        <input type="submit" value="ENVIAR">
-
-
-
-        
-      </form>       
+        <!-- <input type="submit" value="ENVIAR">      -->
+        <button id="my-form-button">Enviar</button>
+        <p id="my-form-status"></p>
+    </form>       
   
 </body>
 <br>

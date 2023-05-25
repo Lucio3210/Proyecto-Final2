@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="prueba1.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="Estilos_productos.css">
+    <script src="js/api.js"></script>
     
 </head>
 <body>
@@ -64,6 +65,14 @@
                 <div>
                     <div class="item6">NEWSLETTER
                         <p>Registrate para recibir las ultimas novedades!</p>
+                        <form id="my-form1" action="https://formspree.io/f/mqkoobjq" method="POST" >
+        
+                            <label>Ingresá tu correo</label><br>
+                            <input type="email" name="email" required /><br>
+                        
+                            <button id="my-form-button">Enviar</button>
+                            <p id="my-form-status"></p>
+                        </form>
                     </div>
                 </div>
             </div>
